@@ -14,7 +14,6 @@
         android:padding="20dp">
 
         <!-- ✅ YOUR EXISTING UI STARTS HERE -->
-
         <ImageView
             android:id="@+id/login_image"
             android:layout_width="80dp"
