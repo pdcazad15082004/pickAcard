@@ -12,7 +12,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="20dp">
-
         <!-- ✅ YOUR EXISTING UI STARTS HERE -->
         <ImageView
             android:id="@+id/login_image"
