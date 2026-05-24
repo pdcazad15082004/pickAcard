@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/shopback"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/searchBar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Search Cards..."
+        android:drawableLeft="@drawable/baseline_search_24"
+        android:drawablePadding="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical|start"
+        android:textColor="#070E15"
+        android:textColorHint="#373D43"
+        android:background="@drawable/edittext_border"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/shopRecyclerView1"
+        android:paddingBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

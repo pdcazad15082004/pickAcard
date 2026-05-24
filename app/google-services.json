@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "940671254937",
+    "firebase_url": "https://pickacard-a7faf-default-rtdb.firebaseio.com",
+    "project_id": "pickacard-a7faf",
+    "storage_bucket": "pickacard-a7faf.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:940671254937:android:b1a917231b0380b2911308",
+        "android_client_info": {
+          "package_name": "com.example.pickacard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "940671254937-culidklvh1phump4diu4g3t4392p3dr7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pickacard",
+            "certificate_hash": "74854d3682827f0664b1966224e110c08e601358"
+          }
+        },
+        {
+          "client_id": "940671254937-kaj0b2r2ugp209ichgdp7b917vjf9850.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSwlhQ3RHBlfP2ImdYUKaUyIxC1aQ8bzM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "940671254937-kaj0b2r2ugp209ichgdp7b917vjf9850.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

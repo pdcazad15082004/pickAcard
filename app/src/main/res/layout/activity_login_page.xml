@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg">
+
+    <!-- ✅ CONTENT LAYER (this will be blurred) -->
+    <LinearLayout
+        android:id="@+id/contentRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- ✅ YOUR EXISTING UI STARTS HERE -->
+
+        <ImageView
+            android:id="@+id/login_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginBottom="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/splashscreen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#1526C0"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="15dp"
+            android:hint="GMAIL"
+            android:layout_marginBottom="9dp"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@android:color/white"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp"
+            app:hintTextColor="#4C64EA"
+            app:hintTextAppearance="@style/HintBold"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/gmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/person"
+                android:drawablePadding="10dp"
+                android:inputType="textEmailAddress"
+                android:textColor="#070707"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4.13dp"
+            android:layout_marginHorizontal="15dp"
+            android:hint="Enter Password"
+            app:boxBackgroundMode="outline"
+            app:boxBackgroundColor="@android:color/white"
+            app:boxStrokeColor="@color/color"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp"
+            app:hintTextColor="#4C64EA"
+            app:endIconMode="password_toggle"
+            app:hintTextAppearance="@style/HintBold"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusBottomEnd="12dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/password"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:textColor="#070707"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:padding="3dp"
+            android:background="@drawable/forgrt_box"
+            android:textStyle="bold"
+            android:textColor="#4C64EA"
+            android:layout_gravity="end"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="15dp"/>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signin"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#1E58EC"
+                android:text="LOGIN"
+                android:textColor="#FEFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:enabled="true"/>
+
+            <ProgressBar
+                android:id="@+id/progress1"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:indeterminate="true"/>
+
+            <ImageView
+                android:id="@+id/loginTick"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:src="@drawable/ic_close_red"/>
+        </FrameLayout>
+
+
+
+        <!-- ... keep the rest of your UI exactly same ... -->
+
+        <!-- OR Divider -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginVertical="2dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#191717" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  OR  "
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#403F3F" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="#191717" />
+        </LinearLayout>
+
+        <!-- Google Login -->
+
+        <!-- Register -->
+        <ImageButton
+            android:id="@+id/google_login_btn"
+            android:layout_width="330dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
+            android:padding="0dp"
+            android:src="@drawable/gsbtn"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="10dp">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:gravity="center_vertical"
+                android:text="New User?"
+                android:textColor="#000000"
+                android:textSize="14sp"
+                />
+
+
+            <TextView
+                android:id="@+id/newuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:onClick="open"
+                android:text="Register"
+                android:textStyle="bold"
+                android:textColor="#3A84F3"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ✅ OVERLAY LAYER (NOT blurred) -->
+    <FrameLayout
+        android:id="@+id/blurOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ProgressBar
+            android:id="@+id/overlaySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateTint="#285DE3"/>
+
+    </FrameLayout>
+
+    <!-- ✅ GOOGLE-ONLY OVERLAY -->
+    <FrameLayout
+        android:id="@+id/googleBlurOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:background="@drawable/loader_card_bg"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="22dp">
+
+            <ImageView
+                android:id="@+id/googleOverlaySpinner"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:src="@drawable/google_spinner"
+                android:contentDescription="@null"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:id="@+id/googleOverlayText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Signing in with Google…"
+                android:textStyle="bold"
+                android:textColor="#393636"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</FrameLayout>

@@ -1,0 +1,14 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <!-- Background color inside the EditText -->
+    <solid android:color="#FFFFFF" />
+
+    <!-- Border color and width -->
+    <stroke
+        android:width="3dp"
+        android:color="#4C64EA" /> <!-- Change this to any color you want -->
+
+    <!-- Optional rounded corners -->
+    <corners android:radius="8dp" />
+</shape>

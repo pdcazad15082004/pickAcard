@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shopback"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Cards_Page_Fragment">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/cardtab"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_margin="6dp"
+        app:tabTextAppearance="@style/CustomTabTextAppearance"
+        android:background="@drawable/editextab"
+        android:elevation="6dp"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicator="@drawable/tab_indicator"
+        app:tabPaddingBottom="2dp"
+        app:tabSelectedTextColor="#237CD5"
+        app:tabIndicatorColor="#2E29C1">
+
+
+    <com.google.android.material.tabs.TabItem
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Your Cards" />
+
+       <com.google.android.material.tabs.TabItem
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Request Cards"/>
+
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpage"
+        android:layout_below="@id/cardtab"/>
+
+</RelativeLayout>

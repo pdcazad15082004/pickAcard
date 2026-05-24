@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title= "Home"
+        android:id="@+id/btmhome"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:title="Cards"
+        android:id="@+id/btmcards"
+        android:icon="@drawable/baseline_credit_card_25"
+        />
+
+    <item
+        android:title=""/>
+
+    <item
+        android:title="Shopping"
+        android:id="@+id/btmshop"
+
+        android:icon="@drawable/baseline_shopping_cart_24" />
+    <item
+
+        android:title="History"
+        android:id="@+id/btmhistory"
+
+        android:icon="@drawable/baseline_history_24" />
+
+</menu>
+
+
+
+
+
+
+

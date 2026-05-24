@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AboutUs_Page">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2386EA"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/backarrow"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:scaleType="fitCenter"
+            android:background="@android:color/transparent"
+            android:padding="5dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="26dp"
+            android:src="@drawable/splashscreen" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:padding="8dp"
+            android:text="About Us"
+            android:textColor="#FDFEFF"
+            android:textSize="22dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- FIXED Scrollable Content below the Toolbar -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:background="@drawable/circle_background"
+                android:elevation="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/splashscreen"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Logo" />
+            />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  pickAcard – A Smart Credit Card Matchmaking Platform"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_marginRight="4dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Description -->
+            <TextView
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginLeft="3dp"
+                android:lineSpacingMultiplier="1.2"
+
+                android:text=" PickAcard is an innovative credit card offer-sharing platform that helps users leverage festival season discounts on e-commerce platforms. Often, a customer wants to purchase a product using a specific credit card offer (like SBI, ICICI, Axis), but they don’t own that card. Meanwhile, another user might have the required card but isn’t planning to buy anything. pickAcard connects these     users—allowing the buyer to benefit from the offer while rewarding the cardholder and the platform with a commission, creating a win-win ecosystem."
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Key Points :"
+                android:textStyle="bold"
+                android:textSize="17dp"
+
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginLeft="3dp"
+
+                android:text=" • Benefits: Enables every user to utilize available credit card offers.\n• Advantages: Smooth matchmaking between buyer and cardholder.\n• Commission: Both the credit card owner and the platform earn a fair commission.\n• Security: All transactions and chats are end-to-end encrypted.\n• Chat/Support: In-app messaging with customer support available 24/7.\n• Rating and Feedback: Reliable user-based rating system for trust and accountability."
+                android:textSize="15sp"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Innovation and Impact:"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+
+            <!-- Innovation -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="3dp"
+                android:lineSpacingMultiplier="1.15"
+                android:text=" pickAcard introduces a new layer to the digital payment ecosystem by promoting the shared use of credit card benefits. It minimizes offer wastage, increases e-commerce activity, and empowers users to collaborate for mutual gains. By turning individual credit cards into community tools, it encourages smarter and more inclusive shopping experiences."
+                android:textSize="16sp"
+                android:layout_marginBottom="18dp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conclusion:"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="3dp"
+                android:lineSpacingMultiplier="1.15"
+                android:text=" pickAcard effectively bridges the gap between offer seekers and cardholders. With features that prioritize trust, convenience, and security, it not only supports individual savings but also fosters a collaborative digital finance community. The project has strong potential to scale and disrupt the way online offers are utilized."
+                android:textSize="15sp"
+                android:layout_marginBottom="32dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Know more"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="17dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="30dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visit our website:"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="6dp"
+                    android:gravity="center_vertical"
+                    android:textColor="#000000" />
+
+
+                <TextView
+                    android:id="@+id/hyperlinkText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://pickAcard.com"
+                    android:onClick="open"
+                    android:textColor="#3A84F3"
+                    android:textSize="15sp"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:src="@drawable/thankyou"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FCFDFD"
+    tools:context=".Home_Fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="150dp">
+
+
+                <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:padding="16dp">
+
+                            <!-- Payments Heading -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Payments"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:layout_marginBottom="8dp" />
+
+
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:weightSum="4"
+                                    android:orientation="horizontal">
+
+                                    <!-- PhonePe -->
+                                    <LinearLayout
+                                        android:layout_width="71dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="16dp"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/phonepeIcon"
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:clickable="true"
+                                            android:focusable="true"
+
+                                            android:contentDescription="PhonePe"
+                                            android:src="@drawable/phonepe" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="10dp"
+                                            android:gravity="center"
+                                            android:text="PhonePe"
+                                            android:textColor="#000"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+
+
+
+                                    <!-- Paytm -->
+                                    <LinearLayout
+                                        android:layout_width="71dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="16dp"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/paytmIcon"
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:clickable="true"
+                                            android:focusable="true"
+
+                                            android:contentDescription="Paytm"
+                                            android:src="@drawable/paytmlogo" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="Paytm"
+                                            android:textColor="#000"
+                                            android:layout_marginTop="10dp"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+
+                                    <!-- GPay -->
+
+                                    <LinearLayout
+                                        android:layout_width="71dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="16dp"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/gpayIcon"
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:clickable="true"
+                                            android:focusable="true"
+
+                                            android:contentDescription="GPay"
+                                            android:src="@drawable/googlepay" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:layout_marginTop="10dp"
+                                            android:text="GPay"
+                                            android:textColor="#000"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+
+
+                                    <!-- CRED -->
+                                    <LinearLayout
+                                        android:layout_width="71dp"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:layout_weight="1"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:id="@+id/credIcon"
+                                            android:layout_width="60dp"
+                                            android:layout_height="60dp"
+                                            android:scaleType="fitCenter"
+                                            android:clickable="true"
+                                            android:focusable="true"
+
+
+                                            android:contentDescription="CRED"
+                                            android:src="@drawable/credc" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center"
+                                            android:text="CRED"
+                                            android:layout_marginTop="10dp"
+                                            android:textColor="#000"
+                                            android:textSize="12sp" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+
+
+                            <!-- Net Banking Heading -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="Net Banking"
+                                android:textSize="24sp"
+                                android:textStyle="bold"
+                                android:textColor="#000000"
+                                android:layout_marginTop="24dp"
+                                android:layout_marginBottom="12dp" />
+
+                            <!-- Grid of Bank Icons (2 rows, 4 icons each) -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:padding="4dp">
+
+                                <!-- First Row -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:weightSum="4"
+
+                                    android:layout_marginBottom="16dp">
+
+                                    <LinearLayout
+                                        android:id="@+id/sbiBank"
+                                        android:layout_width="0dp"
+
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/sbi"
+                                            android:scaleType="centerCrop"
+                                            android:contentDescription="SBI" />
+
+                                        <TextView
+                                            android:layout_height="30dp"
+                                            android:layout_width="30dp"
+                                            android:textSize="15sp"
+                                            android:text="SBI"
+                                            android:gravity="center"  />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/hdfcBank"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/hdfc"
+                                            android:contentDescription="HDFC" />
+
+                                        <TextView
+                                            android:layout_height="30dp"
+                                            android:layout_width="45dp"
+                                            android:textSize="15sp"
+                                            android:text="HDFC"
+
+                                            android:gravity="center" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/iciciBank"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/icici"
+                                            android:contentDescription="ICICI" />
+
+                                        <TextView
+                                            android:text="ICICI"
+                                            android:layout_height="30dp"
+                                            android:layout_width="50dp"
+                                            android:textSize="15sp"
+                                            android:gravity="center" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/kotakBank"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/kotak"
+                                            android:contentDescription="Kotak" />
+
+                                        <TextView
+
+                                            android:text="Kotak"
+                                            android:layout_height="30dp"
+                                            android:layout_width="50dp"
+                                            android:textSize="15sp"
+                                            android:gravity="center" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- Second Row -->
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal"
+                                    android:layout_weight="4"
+                                    >
+
+                                    <LinearLayout
+                                        android:id="@+id/axisBank"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/axis"
+                                            android:contentDescription="Axis" />
+
+                                        <TextView
+                                            android:text="Axis"
+                                            android:layout_height="30dp"
+                                            android:layout_width="50dp"
+                                            android:textSize="15sp"
+                                            android:gravity="center" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/canaraBank"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/canara"
+                                            android:contentDescription="Canara" />
+
+                                        <TextView
+                                            android:text="Canara"
+                                            android:layout_height="30dp"
+                                            android:layout_width="50dp"
+                                            android:textSize="15sp"
+                                            android:gravity="center" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/rblBank"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/rbl"
+                                            android:contentDescription="RBL" />
+
+                                        <TextView
+                                            android:text="RBL"
+                                            android:layout_height="30dp"
+                                            android:layout_width="50dp"
+                                            android:textSize="15sp"
+                                            android:gravity="center" />
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:id="@+id/indusindBank"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:orientation="vertical">
+
+                                        <ImageView
+                                            android:layout_width="50dp"
+                                            android:layout_height="50dp"
+                                            android:src="@drawable/indusind"
+                                            android:contentDescription="IndusInd" />
+
+                                        <TextView
+                                            android:text="IndusInd"
+                                            android:layout_height="30dp"
+                                            android:layout_width="60dp"
+                                            android:textSize="15sp"
+                                            android:gravity="center" />
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                                <!-- Add Card Heading -->
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Add Card"
+                                    android:textSize="20sp"
+                                    android:textStyle="bold"
+                                    android:textColor="#000000"
+                                    android:layout_marginTop="24dp"
+                                    android:gravity="center" />
+
+                                <!-- CardView shaped like ATM card -->
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="140dp"
+                                    android:layout_margin="20dp"
+                                    android:radius="16dp"
+
+
+                                    android:elevation="8dp"
+
+
+                                    app:cardCornerRadius="20dp"
+                                    app:cardElevation="15dp">
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:gravity="center">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:scaleType="fitXY"
+                                            android:layout_margin="0dp"
+                                            android:src="@drawable/creditcardbackground"
+                                            android:contentDescription="Card Background" />
+
+                                        <!-- Circle Button with + Symbol -->
+                                        <ImageButton
+                                            android:id="@+id/addCardButton"
+                                            android:layout_width="80dp"
+                                            android:layout_height="80dp"
+                                            android:layout_centerInParent="true"
+                                            android:background="@drawable/circle_with_background"
+                                            android:contentDescription="Add Card"
+                                            android:elevation="60dp"
+                                            android:padding="10dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/baseline_add_card_24" />
+
+                                    </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

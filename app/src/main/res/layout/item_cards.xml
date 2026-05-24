@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp">
+
+    <!-- CARD ITSELF -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card_front"
+        android:layout_width="338dp"
+        android:layout_height="210dp"
+        android:layout_gravity="center"
+        android:background="@drawable/cardback"
+        android:elevation="15dp"
+        android:padding="20dp">
+
+
+        <!-- Delete -->
+
+        <!-- INDEX BADGE (Request Cards) -->
+
+
+
+
+        <TextView
+            android:id="@+id/card_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/limit_badge"
+            android:fontFamily="@font/cardfont"
+            android:padding="5dp"
+            android:text="Limit:₹50000"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Bank logo -->
+        <!-- DELETE BUTTON (Your Cards) -->
+        <!-- Delete button (Your Cards only) -->
+        <ImageButton
+            android:id="@+id/card_delete"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/baseline_delete_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Index badge (Request Cards only) -->
+        <TextView
+            android:id="@+id/card_index"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:background="@drawable/index_circle"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Bank logo (ALWAYS fixed position) -->
+        <ImageView
+            android:id="@+id/bank_logo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="44dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- Card type -->
+        <TextView
+            android:id="@+id/cardtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:fontFamily="@font/cardfont"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- Card number (TRUE CENTER) -->
+        <TextView
+            android:id="@+id/card_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="1234 5678 9012 3456"
+            android:textSize="21sp"
+            android:layout_marginTop="55dp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/cardfont"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <!-- Card holder -->
+        <TextView
+            android:id="@+id/card_owner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CARDHOLDER NAME"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/cardfont"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Expiry -->
+        <TextView
+            android:id="@+id/expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="01/2026"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/cardfont"
+            app:layout_constraintStart_toEndOf="@id/card_owner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Visa / RuPay -->
+        <ImageView
+            android:id="@+id/bank_type_logo"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
